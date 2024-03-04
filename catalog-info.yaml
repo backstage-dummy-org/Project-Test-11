@@ -1,13 +1,18 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
-  title: "New Project"
-  name: "1234"
-  description: "example"
+  name: Project-test-11
+  description: Demo
   annotations:
-    github.com/project-slug: backstage-dummy-org/Project-Test-11
-    backstage.io/techdocs-ref: dir:.
+    jira/project-key: SPP
+    github.com/project-slug: github.com?owner=backstage-dummy-org&repo=Project-Test-11
+  tags:
+    - test
+  links:
+    - url: https://confluence.ons.gov.uk/display/SEC/SDP+Homepage
+      title: "Confluence "
+      icon: dashboard
 spec:
-  type: service
+  type: Library
   lifecycle: experimental
-  owner: "group:default/spp-sml"
+  owner: group:default/spp-sml
